@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W05: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../w01/w01-task.html">W1 Task</a></li>
+      <li><a href="../w03/w03-task.html">W3 Task</a></li>
+      <li><a href="../w04/w04-task.html">W4 Task</a></li>
+      <li><a href="../w05/w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>Final Project</h1>
+    <h2>D&D Monster Generator</h2>
+
+    <select id="filtered" title="Choose a data filter." autocomplete="off">
+      <option value="level0" selected>Filter Monsters by Level</option>
+      <option value="level.5">Under 1</option>
+      <option value="level1">1</option>
+      <option value="level2">2</option>
+      <option value="level3">3</option>
+      <option value="level4">4</option>
+      <option value="level5">5</option>
+      <option value="level6">6</option>
+      <option value="level7">7</option>
+      <option value="level8">8</option>
+      <option value="level9">9</option>
+      <option value="level10">10</option>
+      <option value="level11">11</option>
+      <option value="level12">12</option>
+      <option value="level13">13</option>
+      <option value="level14">14</option>
+      <option value="level15">15</option>
+      <option value="level16">16</option>
+      <option value="level17">17</option>
+      <option value="level18">18 (No Monsters)</option>
+      <option value="level19">19</option>
+      <option value="level20">20</option>
+      <option value="level20">21+</option>
+      <option value="all">All Levels</option>
+    </select>
+
+    <div id="monstersDisplay">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Final Project | CSE 121b
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
